@@ -1,0 +1,9 @@
+{
+  "name": "3d-virtual-museum",
+  "version": "1.0.0",
+  "description": "Standalone 3D Virtual Museum replica",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
