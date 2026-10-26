@@ -170,10 +170,11 @@ io.on('connection', (socket) => {
 
     // Emotes / reactions
     socket.on('emote', (data) => {
-        if (!data || !data.emote) return;
+        const emote = typeof data === 'string' ? data : (data?.id || data?.emote);
+        if (!emote) return;
         io.to(roomName).emit('visitor_emote', {
             id: socket.id,
-            emote: data.emote
+            emote: emote
         });
     });
 
