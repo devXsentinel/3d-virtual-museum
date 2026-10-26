@@ -94,6 +94,7 @@ function getRoom(name) {
         rooms.set(name, {
             name,
             occupants: new Map(),
+            seats: new Map(),
             seq: 0
         });
     }
@@ -203,6 +204,53 @@ io.on('connection', (socket) => {
         }
     });
 
+    // Bench seat reservation
+    socket.on('seat_claim', (data, callback) => {
+        const seatId = data && data.seat;
+        if (!seatId) {
+            if (typeof callback === 'function') callback({ ok: false, reason: 'invalid_seat' });
+            return;
+        }
+
+        if (!room.seats) room.seats = new Map();
+
+        const currentOccupant = room.seats.get(seatId);
+        if (currentOccupant && currentOccupant !== socket.id && room.occupants.has(currentOccupant)) {
+            if (typeof callback === 'function') {
+                callback({ ok: false, reason: 'Someone else took that seat.' });
+            }
+            return;
+        }
+
+        const token = `seat_${socket.id}_${Date.now()}`;
+        room.seats.set(seatId, socket.id);
+        const visitor = room.occupants.get(socket.id);
+        if (visitor) {
+            visitor.seat = seatId;
+        }
+
+        if (typeof callback === 'function') {
+            callback({
+                ok: true,
+                seat: seatId,
+                token: token
+            });
+        }
+    });
+
+    // Seat release (standing up)
+    socket.on('seat_release', (data) => {
+        const seatId = data && data.seat;
+        if (!seatId || !room.seats) return;
+        if (room.seats.get(seatId) === socket.id) {
+            room.seats.delete(seatId);
+            const visitor = room.occupants.get(socket.id);
+            if (visitor) {
+                visitor.seat = null;
+            }
+        }
+    });
+
     // Network latency ping
     socket.on('net_ping', (pingId) => {
         socket.emit('net_pong', pingId);
@@ -213,6 +261,13 @@ io.on('connection', (socket) => {
         if (room.occupants.has(socket.id)) {
             const visitor = room.occupants.get(socket.id);
             room.occupants.delete(socket.id);
+            if (room.seats) {
+                for (const [seatId, occupantId] of room.seats.entries()) {
+                    if (occupantId === socket.id) {
+                        room.seats.delete(seatId);
+                    }
+                }
+            }
             io.to(roomName).emit('visitor_left', { id: socket.id });
             console.log(`[Multiplayer] ${visitor?.username || socket.id} left room: ${roomName} (Remaining: ${room.occupants.size})`);
         }
