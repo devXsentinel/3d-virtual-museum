@@ -1,9 +1,13 @@
 {
-  "name": "3d-virtual-museum",
+  "name": "saniya-3d-museum",
   "version": "1.0.0",
   "description": "Standalone 3D Virtual Museum replica",
-  "main": "server.js",
   "scripts": {
+    "build": "node -e \"console.log('Site ready for deployment')\"",
     "start": "node server.js"
+  },
+  "dependencies": {
+    "socket.io": "^4.8.4",
+    "socket.io-client": "^4.8.4"
   }
 }
