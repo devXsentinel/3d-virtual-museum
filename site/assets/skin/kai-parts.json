@@ -1,0 +1,455 @@
+{
+  "groups": {
+    "bottom": [
+      {
+        "name": "tripo_part_0",
+        "rgb": [
+          56,
+          57,
+          71
+        ],
+        "tris": 9135
+      },
+      {
+        "name": "tripo_part_1",
+        "rgb": [
+          55,
+          56,
+          70
+        ],
+        "tris": 9420
+      }
+    ],
+    "hair": [
+      {
+        "name": "tripo_part_10",
+        "rgb": [
+          55,
+          40,
+          32
+        ],
+        "tris": 1543
+      },
+      {
+        "name": "tripo_part_12",
+        "rgb": [
+          59,
+          43,
+          35
+        ],
+        "tris": 853
+      },
+      {
+        "name": "tripo_part_15",
+        "rgb": [
+          51,
+          36,
+          30
+        ],
+        "tris": 950
+      },
+      {
+        "name": "tripo_part_16",
+        "rgb": [
+          56,
+          40,
+          33
+        ],
+        "tris": 849
+      },
+      {
+        "name": "tripo_part_17",
+        "rgb": [
+          59,
+          43,
+          35
+        ],
+        "tris": 509
+      },
+      {
+        "name": "tripo_part_18",
+        "rgb": [
+          61,
+          44,
+          36
+        ],
+        "tris": 460
+      },
+      {
+        "name": "tripo_part_21",
+        "rgb": [
+          62,
+          44,
+          37
+        ],
+        "tris": 336
+      },
+      {
+        "name": "tripo_part_22",
+        "rgb": [
+          51,
+          36,
+          29
+        ],
+        "tris": 321
+      },
+      {
+        "name": "tripo_part_23",
+        "rgb": [
+          58,
+          41,
+          34
+        ],
+        "tris": 292
+      },
+      {
+        "name": "tripo_part_24",
+        "rgb": [
+          52,
+          37,
+          31
+        ],
+        "tris": 272
+      },
+      {
+        "name": "tripo_part_25",
+        "rgb": [
+          56,
+          40,
+          33
+        ],
+        "tris": 264
+      },
+      {
+        "name": "tripo_part_26",
+        "rgb": [
+          55,
+          39,
+          32
+        ],
+        "tris": 197
+      },
+      {
+        "name": "tripo_part_29",
+        "rgb": [
+          68,
+          47,
+          39
+        ],
+        "tris": 182
+      },
+      {
+        "name": "tripo_part_30",
+        "rgb": [
+          55,
+          39,
+          33
+        ],
+        "tris": 173
+      },
+      {
+        "name": "tripo_part_31",
+        "rgb": [
+          54,
+          38,
+          32
+        ],
+        "tris": 153
+      },
+      {
+        "name": "tripo_part_32",
+        "rgb": [
+          54,
+          38,
+          30
+        ],
+        "tris": 154
+      },
+      {
+        "name": "tripo_part_33",
+        "rgb": [
+          58,
+          40,
+          33
+        ],
+        "tris": 146
+      },
+      {
+        "name": "tripo_part_35",
+        "rgb": [
+          52,
+          39,
+          33
+        ],
+        "tris": 124
+      },
+      {
+        "name": "tripo_part_36",
+        "rgb": [
+          55,
+          39,
+          32
+        ],
+        "tris": 122
+      },
+      {
+        "name": "tripo_part_39",
+        "rgb": [
+          66,
+          47,
+          39
+        ],
+        "tris": 95
+      },
+      {
+        "name": "tripo_part_40",
+        "rgb": [
+          49,
+          35,
+          28
+        ],
+        "tris": 95
+      },
+      {
+        "name": "tripo_part_41",
+        "rgb": [
+          59,
+          41,
+          36
+        ],
+        "tris": 85
+      },
+      {
+        "name": "tripo_part_42",
+        "rgb": [
+          59,
+          43,
+          36
+        ],
+        "tris": 82
+      },
+      {
+        "name": "tripo_part_43",
+        "rgb": [
+          55,
+          41,
+          33
+        ],
+        "tris": 81
+      },
+      {
+        "name": "tripo_part_44",
+        "rgb": [
+          47,
+          33,
+          28
+        ],
+        "tris": 70
+      },
+      {
+        "name": "tripo_part_45",
+        "rgb": [
+          56,
+          41,
+          34
+        ],
+        "tris": 69
+      },
+      {
+        "name": "tripo_part_46",
+        "rgb": [
+          51,
+          37,
+          31
+        ],
+        "tris": 66
+      },
+      {
+        "name": "tripo_part_47",
+        "rgb": [
+          63,
+          45,
+          38
+        ],
+        "tris": 64
+      },
+      {
+        "name": "tripo_part_48",
+        "rgb": [
+          56,
+          39,
+          32
+        ],
+        "tris": 65
+      }
+    ],
+    "skin": [
+      {
+        "name": "tripo_part_11",
+        "rgb": [
+          198,
+          144,
+          118
+        ],
+        "tris": 1601
+      },
+      {
+        "name": "tripo_part_27",
+        "rgb": [
+          137,
+          96,
+          71
+        ],
+        "tris": 201
+      },
+      {
+        "name": "tripo_part_8",
+        "rgb": [
+          235,
+          180,
+          149
+        ],
+        "tris": 1430
+      },
+      {
+        "name": "tripo_part_9",
+        "rgb": [
+          236,
+          180,
+          149
+        ],
+        "tris": 1416
+      }
+    ],
+    "top": [
+      {
+        "name": "tripo_part_13",
+        "rgb": [
+          32,
+          59,
+          68
+        ],
+        "tris": 558
+      },
+      {
+        "name": "tripo_part_14",
+        "rgb": [
+          63,
+          62,
+          63
+        ],
+        "tris": 1130
+      },
+      {
+        "name": "tripo_part_3",
+        "rgb": [
+          33,
+          63,
+          74
+        ],
+        "tris": 3300
+      },
+      {
+        "name": "tripo_part_34",
+        "rgb": [
+          35,
+          34,
+          45
+        ],
+        "tris": 136
+      },
+      {
+        "name": "tripo_part_37",
+        "rgb": [
+          65,
+          62,
+          60
+        ],
+        "tris": 101
+      },
+      {
+        "name": "tripo_part_38",
+        "rgb": [
+          65,
+          62,
+          61
+        ],
+        "tris": 95
+      },
+      {
+        "name": "tripo_part_4",
+        "rgb": [
+          66,
+          62,
+          61
+        ],
+        "tris": 3744
+      },
+      {
+        "name": "tripo_part_6",
+        "rgb": [
+          65,
+          62,
+          61
+        ],
+        "tris": 3378
+      },
+      {
+        "name": "tripo_part_7",
+        "rgb": [
+          33,
+          63,
+          74
+        ],
+        "tris": 3292
+      }
+    ],
+    "shoes": [
+      {
+        "name": "tripo_part_19",
+        "rgb": [
+          23,
+          22,
+          24
+        ],
+        "tris": 439
+      },
+      {
+        "name": "tripo_part_2",
+        "rgb": [
+          57,
+          39,
+          30
+        ],
+        "tris": 3340
+      },
+      {
+        "name": "tripo_part_20",
+        "rgb": [
+          17,
+          17,
+          19
+        ],
+        "tris": 343
+      },
+      {
+        "name": "tripo_part_28",
+        "rgb": [
+          66,
+          39,
+          30
+        ],
+        "tris": 194
+      },
+      {
+        "name": "tripo_part_5",
+        "rgb": [
+          60,
+          40,
+          32
+        ],
+        "tris": 3067
+      }
+    ]
+  }
+}
